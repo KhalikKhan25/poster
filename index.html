@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usman Urf Samirullah Khan - Gram Pradhan Poster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg1:#081225;--bg2:#1d4ed8;--bg3:#f97316;--text:#ffffff;--muted:#dbeafe;--line:rgba(255,255,255,0.16);--gold:#fde047;--green:#22c55e;--rose:#fb7185;--shadow:0 22px 80px rgba(0,0,0,0.38)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;font-family:'Poppins',sans-serif;color:var(--text);background:radial-gradient(circle at 10% 18%, rgba(249,115,22,.36), transparent 26%),radial-gradient(circle at 88% 10%, rgba(253,224,71,.24), transparent 22%),radial-gradient(circle at 80% 82%, rgba(34,197,94,.18), transparent 24%),radial-gradient(circle at 18% 84%, rgba(251,113,133,.16), transparent 20%),linear-gradient(135deg, var(--bg1), var(--bg2) 55%, #0f172a);overflow-x:hidden;position:relative}
+    body::before,body::after{content:"";position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(64px);opacity:.24;pointer-events:none;animation:floatGlow 9s ease-in-out infinite alternate;z-index:0}
+    body::before{top:-90px;left:-90px;background:#f97316}
+    body::after{right:-90px;bottom:-70px;background:#2563eb;animation-delay:2s}
+    .grid-overlay,.particles,.ribbons{position:fixed;inset:0;pointer-events:none}
+    .grid-overlay{background-image:linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);background-size:32px 32px;mask-image:linear-gradient(to bottom, rgba(0,0,0,.8), transparent 80%);z-index:0}
+    .particles{overflow:hidden;z-index:0}
+    .particles span{position:absolute;display:block;border-radius:50%;background:rgba(255,255,255,.56);box-shadow:0 0 16px rgba(255,255,255,.55);animation:rise linear infinite}
+    .ribbons{z-index:0}
+    .ribbons::before,.ribbons::after{content:"";position:absolute;width:48vw;height:10px;background:linear-gradient(90deg, rgba(249,115,22,.95), rgba(253,224,71,.85), rgba(34,197,94,.88));filter:blur(.2px);border-radius:999px;opacity:.28;animation:sweep 8s ease-in-out infinite}
+    .ribbons::before{top:16%;left:-8%;transform:rotate(-12deg)}
+    .ribbons::after{bottom:18%;right:-10%;transform:rotate(-10deg);animation-delay:2.6s}
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative;z-index:1}
+    .poster{width:min(1180px,100%);position:relative;overflow:hidden;border-radius:34px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.07));backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+    .poster::before{content:"";position:absolute;inset:0;background:linear-gradient(110deg, transparent 0 28%, rgba(255,255,255,.09) 34%, transparent 40% 100%);transform:translateX(-120%);animation:shine 7s linear infinite;pointer-events:none}
+    .top-strip{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 24px;background:linear-gradient(90deg, rgba(249,115,22,.98), rgba(245,158,11,.88));color:#172033;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.88rem}
+    .hero{display:grid;grid-template-columns:1.03fr .97fr;gap:24px;padding:28px}
+    .left,.right{position:relative}
+    .badge-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+    .badge,.mini-chip{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:var(--muted);font-size:.92rem;backdrop-filter:blur(8px)}
+    .badge{animation:pulse 2.3s infinite}
+    .badge::before,.mini-chip::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+    .mini-chip::before{background:var(--gold);box-shadow:0 0 12px rgba(253,224,71,.55)}
+    h1{font-family:'Teko',sans-serif;font-size:clamp(3.2rem, 8vw, 6rem);line-height:.9;letter-spacing:.02em;text-transform:uppercase;text-shadow:0 12px 34px rgba(0,0,0,.32);margin-bottom:8px}
+    h1 span{color:var(--gold)}
+    .subtitle{margin-top:12px;max-width:58ch;font-size:1.06rem;line-height:1.85;color:#edf4ff}
+    .slogan{margin-top:22px;display:inline-block;padding:13px 18px;border-radius:18px;background:linear-gradient(90deg, rgba(255,255,255,.12), rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.16);color:#fff7cc;font-weight:700;box-shadow:0 0 26px rgba(253,224,71,.08);animation:glowCard 3s ease-in-out infinite}
+    .highlights{margin-top:22px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .highlight{padding:16px 14px;text-align:center;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);box-shadow:inset 0 1px 0 rgba(255,255,255,.08);transition:.35s ease}
+    .highlight:hover{transform:translateY(-5px) scale(1.01);background:rgba(255,255,255,.11)}
+    .highlight strong{display:block;font-family:'Teko',sans-serif;font-size:2rem;line-height:1;color:var(--gold);letter-spacing:.04em}
+    .highlight span{font-size:.9rem;color:#e9f2ff}
+    .points{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .point{position:relative;padding:16px 18px 16px 48px;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#f1f6ff;font-size:.95rem;line-height:1.6;overflow:hidden;transition:.35s ease}
+    .point::before{content:"✓";position:absolute;left:16px;top:14px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg, var(--gold), #f59e0b);color:#1f2937;font-weight:800;box-shadow:0 0 20px rgba(253,224,71,.22)}
+    .point:hover{transform:translateY(-4px);background:rgba(255,255,255,.12)}
+    .photo-frame{position:relative;padding:10px;border-radius:32px;background:linear-gradient(135deg, rgba(249,115,22,.85), rgba(253,224,71,.55), rgba(37,99,235,.85));box-shadow:0 18px 44px rgba(0,0,0,.3);animation:borderPulse 4s ease-in-out infinite}
+    .photo-card{position:relative;min-height:645px;border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#09111f}
+    .photo-card img{width:100%;height:100%;object-fit:cover;object-position:center top;transform:scale(1.03);filter:contrast(1.05) saturate(1.05)}
+    .photo-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(2,6,23,.96) 0%, rgba(2,6,23,.2) 45%, rgba(2,6,23,.08) 100%)}
+    .vote-burst{position:absolute;top:18px;right:18px;z-index:2;width:104px;height:104px;display:grid;place-items:center;text-align:center;border-radius:50%;background:radial-gradient(circle, #fde047 0 42%, #f59e0b 43% 100%);color:#1f2937;font-family:'Teko',sans-serif;font-size:1.2rem;line-height:1;letter-spacing:.04em;box-shadow:0 10px 30px rgba(245,158,11,.35);animation:spinPulse 6s linear infinite}
+    .photo-tag{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;padding:18px 18px;border-radius:22px;background:rgba(8,18,37,.74);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(10px)}
+    .photo-tag h2{font-size:1.4rem;margin-bottom:4px}
+    .photo-tag p{font-size:.95rem;color:#dce8ff}
+    .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:0 28px 28px}
+    .appeal,.vision{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.08);border-radius:24px;padding:22px;position:relative;overflow:hidden}
+    .appeal::after,.vision::after{content:"";position:absolute;inset:auto -50px -50px auto;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle, rgba(255,255,255,.18), transparent 70%);pointer-events:none}
+    .appeal h3,.vision h3{font-size:1.08rem;margin-bottom:12px;color:#fde68a;text-transform:uppercase;letter-spacing:.06em}
+    .appeal p,.vision p,.vision li{font-size:.97rem;line-height:1.8;color:#eef4ff}
+    .vote-line{margin-top:14px;font-size:1.12rem;font-weight:800;color:#fff}
+    .vision ul{list-style:none;display:grid;gap:8px;margin-top:4px}
+    .vision li::before{content:"★ ";color:var(--gold)}
+    .bottom-banner{margin:0 28px 28px;padding:16px 22px;border-radius:22px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(90deg, rgba(249,115,22,.18), rgba(255,255,255,.08), rgba(37,99,235,.18));display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .bottom-banner strong{font-size:1.08rem;color:#fff7cc}
+    .bottom-banner span{color:#dbeafe;font-size:.94rem}
+    @keyframes rise{from{transform:translateY(105vh) scale(.7);opacity:0}18%{opacity:.8}to{transform:translateY(-15vh) scale(1.2);opacity:0}}
+    @keyframes floatGlow{from{transform:translate(0,0) scale(1)}to{transform:translate(16px,18px) scale(1.08)}}
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+    @keyframes glowCard{0%,100%{box-shadow:0 0 0 rgba(253,224,71,0)}50%{box-shadow:0 0 28px rgba(253,224,71,.12)}}
+    @keyframes borderPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    @keyframes shine{to{transform:translateX(120%)}}
+    @keyframes spinPulse{0%{transform:rotate(0)}50%{transform:rotate(180deg) scale(1.03)}100%{transform:rotate(360deg)}}
+    @keyframes sweep{0%,100%{transform:translateX(0) rotate(-12deg)}50%{transform:translateX(20px) rotate(-9deg)}}
+    @media (max-width:980px){.hero,.footer-grid{grid-template-columns:1fr}.highlights{grid-template-columns:repeat(3,1fr)}.photo-card{min-height:560px}}
+    @media (max-width:720px){.wrap{padding:14px}.poster{border-radius:24px}.top-strip{padding:12px 14px;font-size:.74rem}.hero{padding:18px}.points,.highlights,.footer-grid{grid-template-columns:1fr}.photo-card{min-height:440px}.bottom-banner{margin:0 18px 18px}.footer-grid{padding:0 18px 18px}.vote-burst{width:88px;height:88px;font-size:1rem}}
+  </style>
+</head>
+<body>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="particles" aria-hidden="true"></div>
+  <div class="ribbons" aria-hidden="true"></div>
+  <main class="wrap">
+    <section class="poster">
+      <div class="top-strip">
+        <span>डिजिटल जनसंपर्क पोस्टर</span>
+        <span>ग्राम सभा सेमारी मुर्देवा • गोरखपुर</span>
+      </div>
+      <div class="hero">
+        <div class="left">
+          <div class="badge-row">
+            <div class="badge">जनता का विश्वास • विकास का प्रयास</div>
+            <div class="mini-chip">युवा सोच • नई दिशा</div>
+          </div>
+          <h1>Usman Urf <span>Samirullah Khan</span></h1>
+          <p class="subtitle">ग्राम प्रधान पद के लिए एक दमदार, आधुनिक और आकर्षक डिजिटल प्रचार पोस्टर। गांव की तरक्की, युवाओं की भागीदारी, सम्मानजनक नेतृत्व और सबके साथ विकास का संदेश।</p>
+          <div class="slogan">“सेमारी मुर्देवा की नई पहचान — ईमानदार सोच, मजबूत नेतृत्व और सबका सम्मान।”</div>
+          <div class="highlights">
+            <div class="highlight"><strong>100%</strong><span>जनता का सम्मान</span></div>
+            <div class="highlight"><strong>24×7</strong><span>सेवा का संकल्प</span></div>
+            <div class="highlight"><strong>1 लक्ष्य</strong><span>गांव का विकास</span></div>
+          </div>
+          <div class="points">
+            <div class="point">युवा ऊर्जा के साथ गांव के विकास और नई सोच को आगे बढ़ाने का संकल्प।</div>
+            <div class="point">शिक्षा, सड़क, स्वच्छता, जल निकासी और बेहतर व्यवस्था पर विशेष ध्यान।</div>
+            <div class="point">हर वर्ग, हर परिवार और हर मोहल्ले तक सम्मान और सहयोग पहुँचाने की भावना।</div>
+            <div class="point">गांव की आवाज़, गांव का चेहरा, गांव की उम्मीद — आपका अपना उम्मीदवार।</div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="photo-frame">
+            <div class="photo-card">
+              <div class="vote-burst">जनता<br>का साथ</div>
+              <img src="./image.jpg" alt="Usman Urf Samirullah Khan campaign portrait" width="768" height="1024" loading="eager" />
+              <div class="photo-tag">
+                <h2>उस्मान उर्फ समीरुल्लाह खान</h2>
+                <p>ग्राम प्रधान पद हेतु • ग्राम सभा: सेमारी मुर्देवा • जिला: गोरखपुर</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="appeal">
+          <h3>जनता से अपील</h3>
+          <p>इस बार अपने गांव के उज्ज्वल भविष्य, बेहतर सुविधाओं और न्यायपूर्ण विकास के लिए उस्मान उर्फ समीरुल्लाह खान जी को अपना समर्थन और आशीर्वाद दें।</p>
+          <p class="vote-line">आपका एक समर्थन, गांव के विकास की मजबूत नींव।</p>
+        </div>
+        <div class="vision">
+          <h3>हमारी प्राथमिकताएं</h3>
+          <ul>
+            <li>गांव की बुनियादी सुविधाओं को मजबूत बनाना</li>
+            <li>युवाओं और बुजुर्गों दोनों के सम्मान की व्यवस्था</li>
+            <li>साफ-सुथरा, सुरक्षित और संगठित ग्राम वातावरण</li>
+            <li>एकजुटता, भरोसा और सबके साथ विकास</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-banner">
+        <strong>सेमारी मुर्देवा से उठेगी विकास, सम्मान और एकता की नई लहर</strong>
+        <span>Usman Urf Samirullah Khan • ग्राम प्रधान पद हेतु डिजिटल जनसंपर्क</span>
+      </div>
+    </section>
+  </main>
+  <script>
+    const particleWrap = document.querySelector('.particles');
+    for (let i = 0; i < 32; i++) {
+      const dot = document.createElement('span');
+      dot.style.left = Math.random() * 100 + 'vw';
+      dot.style.animationDuration = 6 + Math.random() * 8 + 's';
+      dot.style.animationDelay = Math.random() * 6 + 's';
+      const size = 4 + Math.random() * 8;
+      dot.style.width = size + 'px';
+      dot.style.height = size + 'px';
+      dot.style.opacity = 0.3 + Math.random() * 0.5;
+      particleWrap.appendChild(dot);
+    }
+    const heading = document.querySelector('h1');
+    let lifted = false;
+    setInterval(() => {
+      lifted = !lifted;
+      heading.style.transform = lifted ? 'translateY(-4px)' : 'translateY(0px)';
+      heading.style.transition = 'transform .9s ease';
+    }, 1300);
+  </script>
+</body>
+</html>
